@@ -193,6 +193,7 @@
                 }
 
                 var resData = xhr.responseXML;
+                console.log(resData);
                 var result = '<div>';
                     result += '<div>id: ' + resData.getElementsByTagName('id')[0].textContent + '</div>';
                     result += '<div>id_type: ' + resData.getElementsByTagName('id')[0].getAttribute('type') + '</div>';
@@ -252,6 +253,7 @@
                 }
 
                 var resData = xhr.responseXML;
+                console.log(resData);
                 var result = ''
                 for(var i = 0; i < 5; i++){
                     result += '<div class="author">';
